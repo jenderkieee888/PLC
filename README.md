@@ -5,6 +5,30 @@ This expression was expected to have type
 but here has type
     '(string * address) list * address'F# Compiler1
 
+### test_bit_cal.c
+``` c
+void main()
+{
+    int a;
+    int b;
+    a=5;
+    b=3;
+
+    int d;
+    d=a^b;
+
+    int e;
+    e=a|b;
+
+    print d;
+    println;
+
+    print e;
+    println;
+
+}
+```
+
 ### Error
 ``` sh
      1>/Users/xiongboning/Documents/four/plzoofs-master/microc/CLex.fsl(63,71): error FS0039: 类型“LexBuffer<_>”未定义字段、构造函数或成员“GetSlice”。 [/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj]
