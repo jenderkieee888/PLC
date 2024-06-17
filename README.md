@@ -32,3 +32,4 @@ dotnet run --project microc.fsproj example/for_test.c
 ### 修改文件权限
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
+| Vardec SEMI StmtOrDecSeq { Dec (fst $1, snd $1) :: $3 }
