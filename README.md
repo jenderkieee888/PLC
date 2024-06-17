@@ -5,6 +5,27 @@ This expression was expected to have type
 but here has type
     '(string * address) list * address'F# Compiler1
 
+### Error
+``` sh
+     1>/Users/xiongboning/Documents/four/plzoofs-master/microc/CLex.fsl(63,71): error FS0039: 类型“LexBuffer<_>”未定义字段、构造函数或成员“GetSlice”。 [/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj]
+     1>已完成生成项目“/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj”(默认目标)的操作 - 失败。
+
+生成失败。
+
+       “/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj”(默认目标) (1:7) ->
+       (CoreCompile 目标) -> 
+         /Users/xiongboning/Documents/four/plzoofs-master/microc/CLex.fsl(63,71): error FS0039: 类型“LexBuffer<_>”未定义字段、构造函数或成员“GetSlice”。 [/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj]
+
+    0 个警告
+    1 个错误
+
+已用时间 00:00:01.65
+/Users/xiongboning/Documents/four/plzoofs-master/microc/CLex.fsl(63,71): error FS0039: 类型“LexBuffer<_>”未定义字段、构造函数或成员“GetSlice”。 [/Users/xiongboning/Documents/four/plzoofs-master/microc/interpc.fsproj]
+
+生成失败。请修复生成错误并重新运行。
+```
+
+
 ### test_comment.c
 ``` c
 void main()
