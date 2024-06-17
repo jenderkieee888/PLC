@@ -192,3 +192,15 @@ and String chars = parse
         cAccess acc varEnv funEnv @ [ DUP; LDI; CSTI 1; ADD; STI ]
     | Decr acc ->
         cAccess acc varEnv funEnv @ [ DUP; LDI; CSTI 1; SUB; STI ]
+
+### comp三目
+    | Ternary (cond, e1, e2) ->
+        let labtrue = newLabel ()
+        let labend = newLabel ()
+        cExpr cond varEnv funEnv
+        @ [ IFNZRO labtrue ]
+          @ cExpr e2 varEnv funEnv
+            @ [ GOTO labend
+                Label labtrue ]
+          @ cExpr e1 varEnv funEnv
+            @ [ Label labend ]
