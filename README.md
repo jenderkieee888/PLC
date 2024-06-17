@@ -204,3 +204,23 @@ and String chars = parse
                 Label labtrue ]
           @ cExpr e1 varEnv funEnv
             @ [ Label labend ]
+
+### test_do_while.c
+``` c
+void main()
+{
+    int i;
+
+    i=10;
+
+    do
+    {
+        print i;
+        i--;
+    } while (i>=0);
+    
+    println;
+
+}
+```
+
