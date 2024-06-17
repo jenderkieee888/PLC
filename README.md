@@ -5,6 +5,19 @@ This expression was expected to have type
 but here has type
     '(string * address) list * address'F# Compiler1
 
+### test_comment.c
+``` c
+void main()
+{
+    (*
+        This is a comment
+    *)
+    int a;
+    a = 10 ;
+    print a
+}
+```
+
 ### interpreter_test.sh
 ``` sh
 #!/bin/zsh
