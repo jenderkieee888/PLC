@@ -29,3 +29,6 @@ dotnet run --project microc.fsproj example/for_test.c
 ./bin/Debug/net8.0/machine ./example/for_test.out 20
 
 ```
+### 修改文件权限
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
