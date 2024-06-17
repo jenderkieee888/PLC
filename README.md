@@ -33,3 +33,15 @@ dotnet run --project microc.fsproj example/for_test.c
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 
 | Vardec SEMI StmtOrDecSeq { Dec (fst $1, snd $1) :: $3 }
+
+###CPAR自增
+    | Incr acc ->
+        let (loc, store1) = access acc locEnv gloEnv store
+        let value = getSto store1 loc
+        let newValue = value + 1
+        (newValue, setSto store1 loc newValue)
+    | Decr acc ->
+        let (loc, store1) = access acc locEnv gloEnv store
+        let value = getSto store1 loc
+        let newValue = value - 1
+        (newValue, setSto store1 loc newValue)
