@@ -188,7 +188,7 @@ and String chars = parse
 ```
 
 ### comp自增
-| Incr acc ->
-        cAccess acc varEnv funEnv @ [ LDI; INC; DUP; cAccess acc varEnv funEnv @ [ STI ]]
-| Decr acc ->
-        cAccess acc varEnv funEnv @ [ LDI; DEC; DUP; cAccess acc varEnv funEnv @ [ STI ]]
+    | Incr acc ->
+        cAccess acc varEnv funEnv @ [ DUP; LDI; CSTI 1; ADD; STI ]
+    | Decr acc ->
+        cAccess acc varEnv funEnv @ [ DUP; LDI; CSTI 1; SUB; STI ]
