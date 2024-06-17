@@ -186,3 +186,9 @@ and String chars = parse
       { String (char (lexbuf.LexemeChar 0) :: chars) lexbuf } // 将读到的第1个字符加到临时的chars数组
 
 ```
+
+### comp自增
+    | Incr acc ->
+        cAccess acc varEnv funEnv @ [ LDI; CSTI 1; ADD; DUP; STI ]
+    | Decr acc ->
+        cAccess acc varEnv funEnv @ [ LDI; CSTI 1; SUB; DUP; STI ]
