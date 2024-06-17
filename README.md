@@ -47,6 +47,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
         (newValue, setSto store1 loc newValue)
 
 ### CLex.fsl
+``` fs
 {
  (* File MicroC/CLex.lex
     Lexer specification for micro-C, a small imperative language
@@ -184,3 +185,4 @@ and String chars = parse
   | _
       { String (char (lexbuf.LexemeChar 0) :: chars) lexbuf } // 将读到的第1个字符加到临时的chars数组
 
+```
