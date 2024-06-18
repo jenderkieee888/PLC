@@ -2,7 +2,7 @@
 
  
 
- <img src="./img/logo.jpg" alt="img" style="zoom: 67%;" /> 
+ <img src="logo.jpg" alt="img" style="zoom: 67%;" /> 
 
  
 
@@ -10,7 +10,7 @@
 
 ### 实 验 报 告
 
-<img src="./img/logo2.jpg" alt="img" style="zoom:67%;" /> 
+<img src="/logo2.jpg" alt="img" style="zoom:67%;" /> 
 
 - 课  程  名   编程语言原理与编译     
 - 课  程  号      C01102         
@@ -903,6 +903,6 @@ java Machinetrace ex9.out 0
 
  
 
-  指导教师签名：<img src="./img/签名.jpg" style="zoom:15%;" />
+  指导教师签名：<img src="/签名.jpg" style="zoom:15%;" />
 
   日     期：2024年6  月 20 日
