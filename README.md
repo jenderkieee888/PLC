@@ -10,7 +10,7 @@
 
 ### 实 验 报 告
 
-<img src="/logo2.jpg" alt="img" style="zoom:67%;" /> 
+<img src="logo2.jpg" alt="img" style="zoom:67%;" /> 
 
 - 课  程  名   编程语言原理与编译     
 - 课  程  号      C01102         
@@ -346,7 +346,7 @@ java Machinetrace ex9.out 0
         }
         ```
     - 运行栈追踪：  
-        ![](img/ex(float)1.png)
+  
 
     - 例二：
         ```C
@@ -357,7 +357,7 @@ java Machinetrace ex9.out 0
         }
         ```
     - 运行栈追踪：  
-        ![](img/ex(float)2.png)
+
 
 ---
 
@@ -618,7 +618,7 @@ java Machinetrace ex9.out 0
 
 - 结果：  
 
-    ![for](D:\plc\for.png)
+    ![for](for.png)
 
     
 
@@ -677,7 +677,7 @@ java Machinetrace ex9.out 0
     - i的结果为（1+1）+1*1 = 3
     - 栈中3的位置为i，4的位置为n
     - 堆栈图：  
-    ![](img/ex(switch).png)
+
 
 ---
 
