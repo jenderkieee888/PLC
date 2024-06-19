@@ -1,3 +1,4 @@
+VOID, NAME "main", LPAR, RPAR, LBRACE, INT, NAME "y", SEMI, NAME "y", ASSIGN, CSTINT 3, SEMI, RBRACE, EOF
  ## 2023  － 2024   学年第 2 学期
 
  
